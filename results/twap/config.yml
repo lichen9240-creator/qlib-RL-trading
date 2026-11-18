@@ -1,0 +1,23 @@
+concurrency: 1
+data_granularity: 5min
+end_time: '14:54'
+exchange:
+  deal_price:
+  - $close
+  - $close
+  limit_threshold: null
+  volume_threshold: null
+order_file: ./data/orders/test_orders.pkl
+output_dir: results/twap
+qlib:
+  provider_uri_5min: ./data/bin/
+start_time: '9:30'
+strategies:
+  1day:
+    class: TWAPStrategy
+    kwargs: {}
+    module_path: qlib.contrib.strategy.rule_strategy
+  30min:
+    class: TWAPStrategy
+    kwargs: {}
+    module_path: qlib.contrib.strategy.rule_strategy

@@ -1,0 +1,27 @@
+[
+  {
+    "file": "C:\\Users\\33493\\Desktop\\\u91cf\u5316\\qlib-rl-5060\\example\\scripts\\gen_training_orders.py",
+    "reason": "Pandas 2 requires a datetime unit",
+    "diff": "--- \n+++ \n@@ -17,7 +17,7 @@\n     if len(df) == 0 or df.isnull().values.any() or min(df[\"$volume0\"]) < 1e-5:\n         return False\n \n-    df[\"date\"] = df[\"datetime\"].dt.date.astype(\"datetime64\")\n+    df[\"date\"] = df[\"datetime\"].dt.date.astype(\"datetime64[ns]\")\n     df = df.set_index([\"instrument\", \"datetime\", \"date\"])\n     df = df.groupby(\"date\", group_keys=False).take(range(start_idx, end_idx)).droplevel(level=0)\n \n"
+  },
+  {
+    "file": "C:\\Users\\33493\\Desktop\\\u91cf\u5316\\qlib-rl-5060\\.venv\\Lib\\site-packages\\qlib\\rl\\contrib\\backtest.py",
+    "reason": "Pandas 2 makes axis keyword-only",
+    "diff": "--- \n+++ \n@@ -80,7 +80,7 @@\n     if not record_list:\n         return None\n \n-    records: pd.DataFrame = pd.concat(record_list, 0).reset_index().rename(columns={\"index\": \"instrument\"})\n+    records: pd.DataFrame = pd.concat(record_list, axis=0).reset_index().rename(columns={\"index\": \"instrument\"})\n     records = records.set_index([\"instrument\", \"datetime\"])\n     return records\n \n"
+  },
+  {
+    "file": "C:\\Users\\33493\\Desktop\\\u91cf\u5316\\qlib-rl-5060\\.venv\\Lib\\site-packages\\qlib\\rl\\trainer\\trainer.py",
+    "reason": "Load only our locally generated trusted training checkpoints with PyTorch 2.7",
+    "diff": "--- \n+++ \n@@ -155,7 +155,7 @@\n \n     @staticmethod\n     def get_policy_state_dict(ckpt_path: Path) -> OrderedDict:\n-        state_dict = torch.load(ckpt_path, map_location=\"cpu\")\n+        state_dict = torch.load(ckpt_path, map_location=\"cpu\", weights_only=False)\n         if \"vessel\" in state_dict:\n             state_dict = state_dict[\"vessel\"][\"policy\"]\n         return state_dict\n"
+  },
+  {
+    "file": "C:\\Users\\33493\\Desktop\\\u91cf\u5316\\qlib-rl-5060\\example\\scripts\\gen_training_orders.py",
+    "reason": "Pandas 2 group_keys=False already preserves the original three index levels",
+    "diff": "--- \n+++ \n@@ -19,7 +19,7 @@\n \n     df[\"date\"] = df[\"datetime\"].dt.date.astype(\"datetime64[ns]\")\n     df = df.set_index([\"instrument\", \"datetime\", \"date\"])\n-    df = df.groupby(\"date\", group_keys=False).take(range(start_idx, end_idx)).droplevel(level=0)\n+    df = df.groupby(\"date\", group_keys=False).take(range(start_idx, end_idx))\n \n     order_all = pd.DataFrame(df.groupby(level=(2, 0), group_keys=False).mean().dropna())\n     order_all[\"amount\"] = np.random.lognormal(-3.28, 1.14) * order_all[\"$volume0\"]\n"
+  },
+  {
+    "file": "C:\\Users\\33493\\Desktop\\\u91cf\u5316\\qlib-rl-5060\\.venv\\Lib\\site-packages\\qlib\\utils\\index_data.py",
+    "reason": "Pandas 2 does not recognize Qlib custom Index as a list-like index",
+    "diff": "--- \n+++ \n@@ -612,7 +612,7 @@\n         return dict(zip(self.index, self.data.tolist()))\n \n     def to_series(self):\n-        return pd.Series(self.data, index=self.index)\n+        return pd.Series(self.data, index=self.index.tolist())\n \n     def __repr__(self) -> str:\n         return str(pd.Series(self.data, index=self.index.tolist()))\n"
+  }
+]

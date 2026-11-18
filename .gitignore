@@ -218,3 +218,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local environments and future experiment output
+node_modules/
+runs/
+*_preview.png
+*.inspect.ndjson
+
+# Retain the archived training and evaluation logs
+!provenance/training.log
+!results/evaluation.log
+!results/evaluation_stderr.log

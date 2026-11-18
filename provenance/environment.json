@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "pyqlib": "0.9.7",
+    "torch": "2.7.1+cu128",
+    "tianshou": "0.4.10",
+    "gym": "0.23.1",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pyyaml": "6.0.3",
+    "ruamel.yaml": "0.19.1",
+    "joblib": "1.6.0"
+  },
+  "cuda_runtime": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "compute_capability": [
+    12,
+    0
+  ]
+}
