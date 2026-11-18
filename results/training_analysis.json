@@ -1,0 +1,515 @@
+{
+  "models": {
+    "initialized": {
+      "orders": 540,
+      "mean_pa_bps": -3.1927122496625095,
+      "mean_net_pa_bps": -18.484815668013802,
+      "weighted_pa_bps": -4.373886477384209,
+      "weighted_net_pa_bps": -19.397020502009962,
+      "mean_fee_bps": 15.292103418351292,
+      "proportional_fee_bps": 14.995210931625506,
+      "minimum_fee_excess_bps": 0.29689248672578444,
+      "minimum_fee_affected_orders": 305,
+      "pa_standard_deviation_bps": 88.5485990731849,
+      "mean_fulfillment_ratio": 0.9971448277994
+    },
+    "validation_best": {
+      "orders": 540,
+      "mean_pa_bps": 0.7751896767194475,
+      "mean_net_pa_bps": -14.521566036399525,
+      "weighted_pa_bps": -1.880780771578342,
+      "weighted_net_pa_bps": -16.907116284030746,
+      "mean_fee_bps": 15.296755713118971,
+      "proportional_fee_bps": 15.00116278451508,
+      "minimum_fee_excess_bps": 0.29559292860389275,
+      "minimum_fee_affected_orders": 300,
+      "pa_standard_deviation_bps": 42.15325527809631,
+      "mean_fulfillment_ratio": 0.9971448277994
+    },
+    "final": {
+      "orders": 540,
+      "mean_pa_bps": -0.9776060085595879,
+      "mean_net_pa_bps": -16.080297511758403,
+      "weighted_pa_bps": -0.7341709773084446,
+      "weighted_net_pa_bps": -15.738872218930489,
+      "mean_fee_bps": 15.102691503198814,
+      "proportional_fee_bps": 14.998533590987162,
+      "minimum_fee_excess_bps": 0.10415791221165242,
+      "minimum_fee_affected_orders": 20,
+      "pa_standard_deviation_bps": 62.54832025150815,
+      "mean_fulfillment_ratio": 0.9971448277994
+    },
+    "twap": {
+      "orders": 540,
+      "mean_pa_bps": 0.062304717065771634,
+      "mean_net_pa_bps": -25.615033489837174,
+      "weighted_pa_bps": -0.15315076849950532,
+      "weighted_net_pa_bps": -15.96349542525877,
+      "mean_fee_bps": 25.67733820690295,
+      "proportional_fee_bps": 15.000093457075598,
+      "minimum_fee_excess_bps": 10.677244749827345,
+      "minimum_fee_affected_orders": 330,
+      "pa_standard_deviation_bps": 1.544999078933705,
+      "mean_fulfillment_ratio": 0.9971448277994
+    }
+  },
+  "training_selected_rounds": [
+    {
+      "round": 1,
+      "pa": -1.657014175996749,
+      "reward": -0.020867500093301,
+      "steps_per_episode": 2.3886
+    },
+    {
+      "round": 12,
+      "pa": 0.3865294212851157,
+      "reward": 0.000365885879518,
+      "steps_per_episode": 4.4935
+    },
+    {
+      "round": 40,
+      "pa": 3.2456658758700443,
+      "reward": 0.0286981920920343,
+      "steps_per_episode": 4.8021
+    },
+    {
+      "round": 80,
+      "pa": 5.49193290895899,
+      "reward": 0.0509788207562561,
+      "steps_per_episode": 4.6361
+    },
+    {
+      "round": 120,
+      "pa": 6.84048245372597,
+      "reward": 0.0637338912039266,
+      "steps_per_episode": 4.1521
+    },
+    {
+      "round": 160,
+      "pa": 9.032967608322238,
+      "reward": 0.0851710927498893,
+      "steps_per_episode": 4.0121
+    },
+    {
+      "round": 200,
+      "pa": 11.360824813325689,
+      "reward": 0.1079951897999235,
+      "steps_per_episode": 3.9712
+    },
+    {
+      "round": 212,
+      "pa": 11.795255035011447,
+      "reward": 0.1120852670167811,
+      "steps_per_episode": 3.8718
+    }
+  ],
+  "validation_curve": [
+    {
+      "round": 4,
+      "val/pa": 4.9775567727935,
+      "val/reward": 0.0434857818483054,
+      "val/steps_per_episode": 7.527777777777778
+    },
+    {
+      "round": 8,
+      "val/pa": 3.3470025574303683,
+      "val/reward": 0.0308369237224525,
+      "val/steps_per_episode": 5.059027777777778
+    },
+    {
+      "round": 12,
+      "val/pa": 6.188744956970755,
+      "val/reward": 0.0584684680882255,
+      "val/steps_per_episode": 5.286458333333333
+    },
+    {
+      "round": 16,
+      "val/pa": 5.056800592727095,
+      "val/reward": 0.0471993716680116,
+      "val/steps_per_episode": 5.053819444444445
+    },
+    {
+      "round": 20,
+      "val/pa": 4.531848410515668,
+      "val/reward": 0.0419573729940452,
+      "val/steps_per_episode": 5.024305555555555
+    },
+    {
+      "round": 24,
+      "val/pa": 4.047454439977058,
+      "val/reward": 0.0371821543534745,
+      "val/steps_per_episode": 5.064236111111111
+    },
+    {
+      "round": 28,
+      "val/pa": 2.585684467157828,
+      "val/reward": 0.0227626606438017,
+      "val/steps_per_episode": 5.086805555555555
+    },
+    {
+      "round": 32,
+      "val/pa": 2.853456979508259,
+      "val/reward": 0.0248201600728592,
+      "val/steps_per_episode": 5.001736111111111
+    },
+    {
+      "round": 36,
+      "val/pa": 2.057447883639254,
+      "val/reward": 0.0164086802252815,
+      "val/steps_per_episode": 5.105902777777778
+    },
+    {
+      "round": 40,
+      "val/pa": 1.053197176142147,
+      "val/reward": 0.0063784706040143,
+      "val/steps_per_episode": 4.935763888888889
+    },
+    {
+      "round": 44,
+      "val/pa": 1.1990991363368844,
+      "val/reward": 0.0078426985392952,
+      "val/steps_per_episode": 4.932291666666667
+    },
+    {
+      "round": 48,
+      "val/pa": 1.3240691433442289,
+      "val/reward": 0.0090485618038128,
+      "val/steps_per_episode": 4.848958333333333
+    },
+    {
+      "round": 52,
+      "val/pa": 1.3520605606929232,
+      "val/reward": 0.0093436669495213,
+      "val/steps_per_episode": 4.855902777777778
+    },
+    {
+      "round": 56,
+      "val/pa": 1.1605251296761874,
+      "val/reward": 0.0074555117134289,
+      "val/steps_per_episode": 4.756944444444445
+    },
+    {
+      "round": 60,
+      "val/pa": 1.0895473022366902,
+      "val/reward": 0.0066693445501446,
+      "val/steps_per_episode": 4.847222222222222
+    },
+    {
+      "round": 64,
+      "val/pa": 1.4254699227436227,
+      "val/reward": 0.0101500985329919,
+      "val/steps_per_episode": 4.751736111111111
+    },
+    {
+      "round": 68,
+      "val/pa": 0.1498449431344957,
+      "val/reward": -0.0025941431612467,
+      "val/steps_per_episode": 4.708333333333333
+    },
+    {
+      "round": 72,
+      "val/pa": 0.6339937754053975,
+      "val/reward": 0.0023457247910911,
+      "val/steps_per_episode": 4.5
+    },
+    {
+      "round": 76,
+      "val/pa": 0.7848925739297435,
+      "val/reward": 0.0038564488874457,
+      "val/steps_per_episode": 4.585069444444445
+    },
+    {
+      "round": 80,
+      "val/pa": 0.8615598827166677,
+      "val/reward": 0.0044875606327217,
+      "val/steps_per_episode": 4.59375
+    },
+    {
+      "round": 84,
+      "val/pa": 1.1594042931728603,
+      "val/reward": 0.0076118380706167,
+      "val/steps_per_episode": 4.543402777777778
+    },
+    {
+      "round": 88,
+      "val/pa": 0.7372606173902191,
+      "val/reward": 0.0032557080257543,
+      "val/steps_per_episode": 4.767361111111111
+    },
+    {
+      "round": 92,
+      "val/pa": 0.2824402017576118,
+      "val/reward": -0.0012489486768685,
+      "val/steps_per_episode": 4.664930555555555
+    },
+    {
+      "round": 96,
+      "val/pa": 0.4032970576292288,
+      "val/reward": -6.468567370830934e-05,
+      "val/steps_per_episode": 4.619791666666667
+    },
+    {
+      "round": 100,
+      "val/pa": -0.5878405216338044,
+      "val/reward": -0.0100624329941152,
+      "val/steps_per_episode": 4.697916666666667
+    },
+    {
+      "round": 104,
+      "val/pa": 0.5311330118137784,
+      "val/reward": 0.0010766657662865,
+      "val/steps_per_episode": 4.553819444444445
+    },
+    {
+      "round": 108,
+      "val/pa": 0.3677126896416546,
+      "val/reward": -0.000644343010991,
+      "val/steps_per_episode": 4.491319444444445
+    },
+    {
+      "round": 112,
+      "val/pa": 0.5096039218999434,
+      "val/reward": 0.0009311086634425,
+      "val/steps_per_episode": 4.314236111111111
+    },
+    {
+      "round": 116,
+      "val/pa": -0.2663966744244675,
+      "val/reward": -0.0073565304016531,
+      "val/steps_per_episode": 4.138888888888889
+    },
+    {
+      "round": 120,
+      "val/pa": -0.5354416911656533,
+      "val/reward": -0.0102447525598051,
+      "val/steps_per_episode": 4.112847222222222
+    },
+    {
+      "round": 124,
+      "val/pa": -0.7660037759472361,
+      "val/reward": -0.0125474798891023,
+      "val/steps_per_episode": 4.102430555555555
+    },
+    {
+      "round": 128,
+      "val/pa": -1.3503626336711734,
+      "val/reward": -0.0185052177718972,
+      "val/steps_per_episode": 4.199652777777778
+    },
+    {
+      "round": 132,
+      "val/pa": -0.4713792810251049,
+      "val/reward": -0.0094999617917331,
+      "val/steps_per_episode": 4.185763888888889
+    },
+    {
+      "round": 136,
+      "val/pa": -1.16969997865942,
+      "val/reward": -0.0165725784902986,
+      "val/steps_per_episode": 4.149305555555555
+    },
+    {
+      "round": 140,
+      "val/pa": -0.9464693572752492,
+      "val/reward": -0.0146106715820122,
+      "val/steps_per_episode": 4.083333333333333
+    },
+    {
+      "round": 144,
+      "val/pa": -0.949031158420024,
+      "val/reward": -0.0144061101953117,
+      "val/steps_per_episode": 4.223958333333333
+    },
+    {
+      "round": 148,
+      "val/pa": -0.8678764773722907,
+      "val/reward": -0.0133049221811313,
+      "val/steps_per_episode": 4.276041666666667
+    },
+    {
+      "round": 152,
+      "val/pa": -1.4744446380171423,
+      "val/reward": -0.0197911767042456,
+      "val/steps_per_episode": 4.119791666666667
+    },
+    {
+      "round": 156,
+      "val/pa": -1.6919507164786272,
+      "val/reward": -0.0221359423499721,
+      "val/steps_per_episode": 4.107638888888889
+    },
+    {
+      "round": 160,
+      "val/pa": 0.6395742939986534,
+      "val/reward": 0.0008736075233198,
+      "val/steps_per_episode": 3.986111111111111
+    },
+    {
+      "round": 164,
+      "val/pa": 0.4858749819970546,
+      "val/reward": -0.0005091610596592,
+      "val/steps_per_episode": 4.092013888888889
+    },
+    {
+      "round": 168,
+      "val/pa": -0.0745040471541818,
+      "val/reward": -0.006083003434505,
+      "val/steps_per_episode": 4.131944444444445
+    },
+    {
+      "round": 172,
+      "val/pa": 0.4551607680970767,
+      "val/reward": -0.0008605740319923,
+      "val/steps_per_episode": 4.064236111111111
+    },
+    {
+      "round": 176,
+      "val/pa": 1.3771343584654183,
+      "val/reward": 0.0080045611772465,
+      "val/steps_per_episode": 3.9878472222222223
+    },
+    {
+      "round": 180,
+      "val/pa": 1.1219287069169432,
+      "val/reward": 0.0055058900784284,
+      "val/steps_per_episode": 3.9149305555555554
+    },
+    {
+      "round": 184,
+      "val/pa": 1.1363823988808317,
+      "val/reward": 0.0055627533869563,
+      "val/steps_per_episode": 4.048611111111111
+    },
+    {
+      "round": 188,
+      "val/pa": -0.3285683425305188,
+      "val/reward": -0.009460017916046,
+      "val/steps_per_episode": 3.857638888888889
+    },
+    {
+      "round": 192,
+      "val/pa": 0.5972485944674337,
+      "val/reward": -0.0003268485460665,
+      "val/steps_per_episode": 3.8524305555555554
+    },
+    {
+      "round": 196,
+      "val/pa": 0.5803673992536962,
+      "val/reward": -0.0004691848037595,
+      "val/steps_per_episode": 3.8472222222222223
+    },
+    {
+      "round": 200,
+      "val/pa": 0.092226605458062,
+      "val/reward": -0.0052794121861602,
+      "val/steps_per_episode": 3.861111111111111
+    },
+    {
+      "round": 204,
+      "val/pa": 0.5769560214019414,
+      "val/reward": -0.000614843721166,
+      "val/steps_per_episode": 3.7065972222222223
+    },
+    {
+      "round": 208,
+      "val/pa": 0.8173660443124916,
+      "val/reward": 0.0016528271097915,
+      "val/steps_per_episode": 3.748263888888889
+    },
+    {
+      "round": 212,
+      "val/pa": 0.7153635795570491,
+      "val/reward": 0.0006270154251996,
+      "val/steps_per_episode": 3.6666666666666665
+    }
+  ],
+  "paired_gross_pa": {
+    "validation_best_minus_final": {
+      "mean_gross_pa_difference_bps": 1.7527956852790352,
+      "order_win_fraction": 0.5222222222222223,
+      "day_win_fraction": 0.4166666666666667,
+      "trading_days": 60,
+      "daily_cluster_bootstrap_95pct_ci_bps": [
+        -6.67710857791112,
+        10.721949223680408
+      ],
+      "stock_mean_differences_bps": {
+        "SH600000": -1.0731059190072778,
+        "SH600004": 17.867816307509276,
+        "SH600010": -4.3841353540294286,
+        "SH600011": -0.20355475567745718,
+        "SH600015": 1.2403583791876591,
+        "SH600016": 3.2504899249577632,
+        "SH600018": -1.1712117016400114,
+        "SH600019": 0.291395377691331,
+        "SH600023": -0.04289109148053415
+      },
+      "stock_contributions_to_overall_mean_bps": {
+        "SH600000": -0.11923399100080864,
+        "SH600004": 1.9853129230565862,
+        "SH600010": -0.4871261504477143,
+        "SH600011": -0.02261719507527302,
+        "SH600015": 0.13781759768751767,
+        "SH600016": 0.36116554721752925,
+        "SH600018": -0.13013463351555682,
+        "SH600019": 0.032377264187925664,
+        "SH600023": -0.004765676831170461
+      },
+      "bootstrap_seed": 42,
+      "bootstrap_samples": 10000
+    },
+    "validation_best_minus_initialized": {
+      "mean_gross_pa_difference_bps": 3.9679019263819555,
+      "order_win_fraction": 0.48518518518518516,
+      "day_win_fraction": 0.5333333333333333,
+      "trading_days": 60,
+      "daily_cluster_bootstrap_95pct_ci_bps": [
+        -10.771134758045145,
+        19.1598838278823
+      ],
+      "stock_mean_differences_bps": {
+        "SH600000": -1.7249151477958062,
+        "SH600004": 20.328009676999343,
+        "SH600010": -4.23337970020421,
+        "SH600011": 20.187608829171218,
+        "SH600015": 0.15349227343412236,
+        "SH600016": 3.1635430238545763,
+        "SH600018": -4.117338191935364,
+        "SH600019": -4.501419615290363,
+        "SH600023": 6.455516189204093
+      },
+      "stock_contributions_to_overall_mean_bps": {
+        "SH600000": -0.19165723864397846,
+        "SH600004": 2.258667741888816,
+        "SH600010": -0.47037552224491225,
+        "SH600011": 2.243067647685691,
+        "SH600015": 0.01705469704823582,
+        "SH600016": 0.35150478042828626,
+        "SH600018": -0.4574820213261515,
+        "SH600019": -0.5001577350322626,
+        "SH600023": 0.7172795765782325
+      },
+      "bootstrap_seed": 42,
+      "bootstrap_samples": 10000
+    }
+  },
+  "pilot_budget": {
+    "historical_awake_seconds_per_round": 462.5447582165095,
+    "single_24_round_hours": 3.0836317214433966,
+    "single_32_round_hours": 4.111508961924529,
+    "four_24_round_hours": 12.334526885773586,
+    "four_32_round_hours": 16.446035847698116,
+    "basis": "Historical average with the original 25 update repeats; provisional until a new pilot is measured"
+  },
+  "input_sha256": {
+    "results/train_result.csv": "ae9b837d3f0aa056cef31c09681d3be6a979c35cc39f84eff60a4521676a3203",
+    "results/validation_result.csv": "c30ce9f5ce837ef1b9b2fbc09e2ace689bd9e7681e2f3241ad48a8d269da8608",
+    "results/comparison.json": "7334053de410da0b829b26aabac8bb89bf3691c4d7846b5673bce534fcc62459",
+    "results/initialized/backtest_result.csv": "293ad917a9faa76a9511cb8edd6f1081ec55f2973816aa5843e0062867d42db0",
+    "results/validation_best/backtest_result.csv": "2f54ae475a0e6cb24989911c173e11f3f3b9f262ab3927e5e5958efddd113392",
+    "results/final/backtest_result.csv": "09e6eec479fedf1d2cfbdedbcfede97e950bbb32c0ed6f8a0d2395117f92984b",
+    "results/twap/backtest_result.csv": "17c763ec501bd64594fe430a091257e133386de6476e51f4887fb69233d7f96a"
+  },
+  "plot": "results/training_curves.png",
+  "scope": "One seed, nine stocks, 60 test days; bootstrap does not include all temporal or model-selection uncertainty"
+}

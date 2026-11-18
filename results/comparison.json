@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-11-18T16:14:03.070109+08:00",
+  "models": {
+    "initialized": {
+      "orders": 540,
+      "mean_pa_bps": -3.1927122496625095,
+      "median_pa_bps": 0.0898842984287107,
+      "notional_weighted_pa_bps": -4.373886477384209,
+      "mean_fee_bps": 15.292103418351292,
+      "mean_fee_adjusted_pa_bps": -18.484815668013802,
+      "mean_fulfillment_ratio": 0.9971448277994,
+      "minimum_fulfillment_ratio": 0.9787484252935024,
+      "zero_fill_orders": 0,
+      "label": "Training before, reconstructed seed 42",
+      "iteration": 0,
+      "seconds": 200.543,
+      "mean_pa_change_vs_initialized_bps": 0.0,
+      "mean_net_pa_change_vs_initialized_bps": 0.0
+    },
+    "validation_best": {
+      "orders": 540,
+      "mean_pa_bps": 0.7751896767194475,
+      "median_pa_bps": -0.38495241841907113,
+      "notional_weighted_pa_bps": -1.880780771578342,
+      "mean_fee_bps": 15.296755713118971,
+      "mean_fee_adjusted_pa_bps": -14.521566036399525,
+      "mean_fulfillment_ratio": 0.9971448277994,
+      "minimum_fulfillment_ratio": 0.9787484252935024,
+      "zero_fill_orders": 0,
+      "label": "Validation-selected checkpoint",
+      "iteration": 12,
+      "seconds": 156.6,
+      "mean_pa_change_vs_initialized_bps": 3.9679019263819573,
+      "mean_net_pa_change_vs_initialized_bps": 3.9632496316142767
+    },
+    "final": {
+      "orders": 540,
+      "mean_pa_bps": -0.9776060085595879,
+      "median_pa_bps": -0.8106862761431133,
+      "notional_weighted_pa_bps": -0.7341709773084446,
+      "mean_fee_bps": 15.102691503198814,
+      "mean_fee_adjusted_pa_bps": -16.080297511758403,
+      "mean_fulfillment_ratio": 0.9971448277994,
+      "minimum_fulfillment_ratio": 0.9787484252935024,
+      "zero_fill_orders": 0,
+      "label": "Final checkpoint",
+      "iteration": 212,
+      "seconds": 68.84,
+      "mean_pa_change_vs_initialized_bps": 2.2151062411029216,
+      "mean_net_pa_change_vs_initialized_bps": 2.404518156255399
+    },
+    "twap": {
+      "orders": 540,
+      "mean_pa_bps": 0.062304717065771634,
+      "median_pa_bps": -0.02089439009755885,
+      "notional_weighted_pa_bps": -0.15315076849950532,
+      "mean_fee_bps": 25.67733820690295,
+      "mean_fee_adjusted_pa_bps": -25.615033489837174,
+      "mean_fulfillment_ratio": 0.9971448277994,
+      "minimum_fulfillment_ratio": 0.9787484252935024,
+      "zero_fill_orders": 0,
+      "label": "TWAP benchmark",
+      "iteration": null,
+      "seconds": 49.335,
+      "mean_pa_change_vs_initialized_bps": 3.2550169667282813,
+      "mean_net_pa_change_vs_initialized_bps": -7.130217821823372
+    }
+  },
+  "provenance": {
+    "initialization": {
+      "method": "Reconstructed with the original seed and official train_onpolicy.main constructor order",
+      "seed": 42,
+      "original_initial_checkpoint_saved": false,
+      "training_executed_during_reconstruction": false,
+      "independent_reconstructions_identical": true,
+      "state_tensor_count": 104,
+      "checkpoint": "models/000.pth",
+      "sha256": "a17dc91cc240a39399697a78fc372da6dc14eb6dd24deaa8789d61e18b596461"
+    },
+    "environment": {
+      "python": "3.12.14",
+      "qlib": "0.9.7",
+      "torch": "2.7.1+cu128",
+      "tianshou": "0.4.10"
+    },
+    "checkpoint_sha256": {
+      "initialized": "a17dc91cc240a39399697a78fc372da6dc14eb6dd24deaa8789d61e18b596461",
+      "validation_best": "14465a528c5011048372609940b38f17070c25e85ab67ea5ca0631c368693ae2",
+      "final": "298563126c4c8f819ad24e6fbbfa4f9fb7d1311baf78829a8c3abcf0da850e88"
+    },
+    "test_orders_sha256": "ad17bb31fcc0e0e9aa5bbf9e34827b9e59b2dd42dedb91392865ca80639160a8",
+    "train_config_sha256": "dc61686b831b131276f65e64bdadab25a623c8e9b1a235c38a83255b5ceabe30",
+    "original_training_status": {
+      "pid": 46908,
+      "completed_iterations": 212,
+      "phase": "complete",
+      "max_iterations": 500,
+      "updated_at": "2026-11-18T09:00:05.046105+08:00",
+      "elapsed_seconds": 143521.56,
+      "device": "cuda:0",
+      "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "current_iteration": 212,
+      "training_episodes": 2150528,
+      "last_iteration_seconds": 335.77,
+      "peak_tensor_mib": 811.6,
+      "training_seconds": 143487.22
+    },
+    "original_time_accounting": {
+      "Source": "Run perf_counter and Windows Power-Troubleshooter events",
+      "TrainingAndValidationWallSeconds": 143487.22,
+      "TotalWallSeconds": 143521.56,
+      "RecordedSleepSeconds": 45427.73125809999,
+      "TrainingAndValidationExcludingSleepSeconds": 98059.48874190002,
+      "SimpleTestSeconds": 34.33999999999651,
+      "SleepIntervals": [
+        {
+          "SleepTime": "2026-11-17T18:12:36.7728006+08:00",
+          "WakeTime": "2026-11-17T18:13:13.6165055+08:00",
+          "Seconds": 36.8437049
+        },
+        {
+          "SleepTime": "2026-11-17T04:41:46.2341399+08:00",
+          "WakeTime": "2026-11-17T17:17:53.5675677+08:00",
+          "Seconds": 45367.3334278
+        },
+        {
+          "SleepTime": "2026-11-17T04:41:19.1120991+08:00",
+          "WakeTime": "2026-11-17T04:41:42.6662245+08:00",
+          "Seconds": 23.5541254
+        }
+      ]
+    },
+    "original_status_file": "provenance\\training_status.json",
+    "original_summary_file": "provenance\\original_backtest_summary.json",
+    "validation_selection": "Maximum validation PA; validation every 4 rounds",
+    "best_validation_iteration": 12,
+    "exchange": {
+      "open_cost": 0.0005,
+      "close_cost": 0.0015,
+      "min_cost": 5.0,
+      "trade_unit": 100.0,
+      "cash_limit": null,
+      "deal_price": [
+        "$close",
+        "$close"
+      ],
+      "limit_threshold": null,
+      "volume_threshold": null
+    },
+    "test_stocks": 9,
+    "test_orders": 540,
+    "metric_units": "PA and fee-adjusted PA are basis points; FFR is a ratio",
+    "training_shutdown_warning": "DataQueue destructor raised handle is closed after all results were saved"
+  }
+}

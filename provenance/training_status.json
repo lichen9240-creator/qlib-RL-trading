@@ -1,0 +1,15 @@
+{
+  "pid": 46908,
+  "completed_iterations": 212,
+  "phase": "complete",
+  "max_iterations": 500,
+  "updated_at": "2026-11-18T09:00:05.046105+08:00",
+  "elapsed_seconds": 143521.56,
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "current_iteration": 212,
+  "training_episodes": 2150528,
+  "last_iteration_seconds": 335.77,
+  "peak_tensor_mib": 811.6,
+  "training_seconds": 143487.22
+}

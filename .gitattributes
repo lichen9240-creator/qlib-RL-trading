@@ -1,0 +1,8 @@
+# Preserve archived experiment bytes and their recorded SHA-256 values.
+* -text
+*.bin binary
+*.pkl binary
+*.target binary
+*.npy binary
+*.pth binary
+*.xlsx binary

@@ -1,0 +1,7 @@
+{
+  "stock": "SH600009",
+  "rows": 23280,
+  "has_missing_values": false,
+  "minimum_volume": 0.0,
+  "filter": "Official generator rejects any missing value or minimum volume <1e-5 over the full period"
+}

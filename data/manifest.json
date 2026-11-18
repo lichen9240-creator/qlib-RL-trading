@@ -1,0 +1,981 @@
+{
+  "source": "Qlib v0.9.7 official order-execution example, existing frozen dataset",
+  "raw_archive_source": "https://github.com/SunsetWolf/qlib_dataset/releases/download/v2/qlib_data_hs300_5min_latest.zip",
+  "instruments_for_preparation": [
+    "SH600000",
+    "SH600004",
+    "SH600009",
+    "SH600010",
+    "SH600011",
+    "SH600015",
+    "SH600016",
+    "SH600018",
+    "SH600019",
+    "SH600023"
+  ],
+  "training_stocks": [
+    "SH600000",
+    "SH600004",
+    "SH600010",
+    "SH600011",
+    "SH600015",
+    "SH600016",
+    "SH600018",
+    "SH600019",
+    "SH600023"
+  ],
+  "splits": {
+    "validation": [
+      "2021-07-01",
+      "2021-09-30"
+    ],
+    "train": [
+      "2020-01-01",
+      "2021-06-30"
+    ],
+    "test": [
+      "2021-10-01",
+      "2021-12-31"
+    ]
+  },
+  "training_order_count": 3249,
+  "validation_order_count": 576,
+  "test_order_count": 540,
+  "files": [
+    {
+      "path": "bin/calendars/5min.txt",
+      "bytes": 4198080,
+      "sha256": "577ef06f1fe7e9c319c153bd37ecd2a5ed79023ac3b11ea62520e1178a848ffe"
+    },
+    {
+      "path": "bin/features/sh600000/adjustflag.5min.bin",
+      "bytes": 839620,
+      "sha256": "9517e99211ce72fd51c23d40703bc403578bdd96a2219dfa420bd0dda9325dd2"
+    },
+    {
+      "path": "bin/features/sh600000/amount.5min.bin",
+      "bytes": 839620,
+      "sha256": "a587b02843dace903e28adcf8bc9632a74da062ffdd8103aef69e601c612d167"
+    },
+    {
+      "path": "bin/features/sh600000/change.5min.bin",
+      "bytes": 839620,
+      "sha256": "dcb6b922f4e91f1d342af6e879cb4745673c44c59b179f33b496483650dfdd0e"
+    },
+    {
+      "path": "bin/features/sh600000/close.5min.bin",
+      "bytes": 839620,
+      "sha256": "4d16ddd7c2eba73e66c72b4d09663cf6bcf63b4065bd1b66e99df47af638df19"
+    },
+    {
+      "path": "bin/features/sh600000/factor.5min.bin",
+      "bytes": 839620,
+      "sha256": "46e92cd16d0a27113f994c39507f2ee71bfc64af05e3dfb6b585d72164e75b49"
+    },
+    {
+      "path": "bin/features/sh600000/high.5min.bin",
+      "bytes": 839620,
+      "sha256": "234b3c96d35ebb78ec7966e368266ffbf7dacfe73d4504386b3e344aa7025320"
+    },
+    {
+      "path": "bin/features/sh600000/low.5min.bin",
+      "bytes": 839620,
+      "sha256": "5e7707d5044ddf701192be1706929732873687fe02347c28b1cc7e7df237844e"
+    },
+    {
+      "path": "bin/features/sh600000/open.5min.bin",
+      "bytes": 839620,
+      "sha256": "b59e7eb8fddcbcf775e25b934f4788642ecb1090851c129efa030375e0e73366"
+    },
+    {
+      "path": "bin/features/sh600000/paused_num.5min.bin",
+      "bytes": 839620,
+      "sha256": "1801e0a8a7d523fe32b7b3a0abff23644b2bef9f41dd82d51f28e5bdfc44ce71"
+    },
+    {
+      "path": "bin/features/sh600000/paused.5min.bin",
+      "bytes": 839620,
+      "sha256": "7110fa632456fc675bb62380f44bd52479f67445bbe4fba89ad257257a7043e5"
+    },
+    {
+      "path": "bin/features/sh600000/volume.5min.bin",
+      "bytes": 839620,
+      "sha256": "e3052015f76c2fadeb93034b936a3cfa95b55bc707b22b893aee3efe40ef0daa"
+    },
+    {
+      "path": "bin/features/sh600004/adjustflag.5min.bin",
+      "bytes": 839620,
+      "sha256": "d1d2cfd2f1fa7bbdd93ef16bfaa73cb39b50332782d9d0184b3022df3b0ecd52"
+    },
+    {
+      "path": "bin/features/sh600004/amount.5min.bin",
+      "bytes": 839620,
+      "sha256": "c2684c0b3200a1a2cdbac304c03781d5aa61e180b78294dd73efcd040e431fcb"
+    },
+    {
+      "path": "bin/features/sh600004/change.5min.bin",
+      "bytes": 839620,
+      "sha256": "41cde29a8cff3b178f4eb3ab123ef8f5b1e6c752d5ddf3877e9c9664dff687e0"
+    },
+    {
+      "path": "bin/features/sh600004/close.5min.bin",
+      "bytes": 839620,
+      "sha256": "a3d837890fd2f25a617cfd8142e0bc46525aa4cf100b3770a968f2abcf3d2d6f"
+    },
+    {
+      "path": "bin/features/sh600004/factor.5min.bin",
+      "bytes": 839620,
+      "sha256": "6fb836c022bc4539dffa24089ee4ab620f2433415c928581e99624c2f999f190"
+    },
+    {
+      "path": "bin/features/sh600004/high.5min.bin",
+      "bytes": 839620,
+      "sha256": "47ab7218e9885e4abec7c6a6045b4c031cf906b97b466992ae94fccc28c4b6b6"
+    },
+    {
+      "path": "bin/features/sh600004/low.5min.bin",
+      "bytes": 839620,
+      "sha256": "8a199aec8f731f59cb8959b5f723749ac29c20062c6160917fe7ee281d4f3873"
+    },
+    {
+      "path": "bin/features/sh600004/open.5min.bin",
+      "bytes": 839620,
+      "sha256": "7f98201d508a84c2ec9a986d6b9fbf2c9a8c1c034e3ec6c62c403aa1ad9d1083"
+    },
+    {
+      "path": "bin/features/sh600004/paused_num.5min.bin",
+      "bytes": 839620,
+      "sha256": "09a9b6c1347ff788d6612b50a3d8e8b7b30695eb069cd888c86c87b04c750de5"
+    },
+    {
+      "path": "bin/features/sh600004/paused.5min.bin",
+      "bytes": 839620,
+      "sha256": "7606da0db2ff6fb9d4b230a53c603655ff0e43931e8c01f53a7bda71fda113c7"
+    },
+    {
+      "path": "bin/features/sh600004/volume.5min.bin",
+      "bytes": 839620,
+      "sha256": "d385d4ea2b619ef34c0c2b46f133294c8681417e1ffc49fc47db358ffd6616e9"
+    },
+    {
+      "path": "bin/features/sh600009/adjustflag.5min.bin",
+      "bytes": 839620,
+      "sha256": "6ed2c19a69b9de10f9505b5983c080d82177aed211ffe9921eb846fcd5252510"
+    },
+    {
+      "path": "bin/features/sh600009/amount.5min.bin",
+      "bytes": 839620,
+      "sha256": "94446dad889d8cd8f0dd6e48a655fc1194559187328423bda8349f6eedc4d673"
+    },
+    {
+      "path": "bin/features/sh600009/change.5min.bin",
+      "bytes": 839620,
+      "sha256": "554c110064e98600a15dc7131065f0f09ac1189dfab19b10c013158327780b1a"
+    },
+    {
+      "path": "bin/features/sh600009/close.5min.bin",
+      "bytes": 839620,
+      "sha256": "2792adf4dfd6a8bc5dcf0d158af5bb34e17f7852c3cc50fdcc1ff8814e41b71f"
+    },
+    {
+      "path": "bin/features/sh600009/factor.5min.bin",
+      "bytes": 839620,
+      "sha256": "803b5742a6b04f6d45764c2b0e1576e8660e84bde6d2a279930053d33f3713c2"
+    },
+    {
+      "path": "bin/features/sh600009/high.5min.bin",
+      "bytes": 839620,
+      "sha256": "9d7f078c17cddddf1585f002f276296a3fe8572528795331d55612a900a412fd"
+    },
+    {
+      "path": "bin/features/sh600009/low.5min.bin",
+      "bytes": 839620,
+      "sha256": "ff0f71f799d10d7c892ba1bad45fdfd56437dffba9e09745c4a246e6ebe14cb9"
+    },
+    {
+      "path": "bin/features/sh600009/open.5min.bin",
+      "bytes": 839620,
+      "sha256": "0c915b49498a6c18a71d9976f3504f29f42c5fb9b3c48ecd975b5558cbdac6fa"
+    },
+    {
+      "path": "bin/features/sh600009/paused_num.5min.bin",
+      "bytes": 839620,
+      "sha256": "06f90eb6f51da13694432e384c61eace8bcd33d4a76e3565761883afe888f242"
+    },
+    {
+      "path": "bin/features/sh600009/paused.5min.bin",
+      "bytes": 839620,
+      "sha256": "fbddd40f8f969698c8c05479e11ae34ee342f0520ed47ffa79f73472ef8bfc04"
+    },
+    {
+      "path": "bin/features/sh600009/volume.5min.bin",
+      "bytes": 839620,
+      "sha256": "f510dfb8fe4963e6ac540d01443215c8aa2ea21f60a43d99bd30a8556e5c90ed"
+    },
+    {
+      "path": "bin/features/sh600010/adjustflag.5min.bin",
+      "bytes": 839620,
+      "sha256": "75d46c5e2e9a37b659ffbe5c021c015b7cfdcc0080be21828aa766e3ebe7ecd8"
+    },
+    {
+      "path": "bin/features/sh600010/amount.5min.bin",
+      "bytes": 839620,
+      "sha256": "caf1ab3db8047a17c97831eddd33ff69049f7c5b4dc7d14b716484221d72ebd5"
+    },
+    {
+      "path": "bin/features/sh600010/change.5min.bin",
+      "bytes": 839620,
+      "sha256": "3893333e04ff6714375b739c3435ea5c1205a8ad6eefa2945c2d844ed4d2ae63"
+    },
+    {
+      "path": "bin/features/sh600010/close.5min.bin",
+      "bytes": 839620,
+      "sha256": "7c5ef9730638e1baf7520a96d154f6aabf815910aaf5504679ce6baa05127f40"
+    },
+    {
+      "path": "bin/features/sh600010/factor.5min.bin",
+      "bytes": 839620,
+      "sha256": "f6c6ea4811c604d0829d0ecfd0342c25fe921b5279dd87c1ebe3c34e7bd30019"
+    },
+    {
+      "path": "bin/features/sh600010/high.5min.bin",
+      "bytes": 839620,
+      "sha256": "033e63cf5840f23a28b1d87c2c934e1b540f288505202aa0d3c582703c5e7257"
+    },
+    {
+      "path": "bin/features/sh600010/low.5min.bin",
+      "bytes": 839620,
+      "sha256": "83fc2133e4c7bb883a3aef158a70624200ba3d17c3ae6b1faabeb9fb8847337b"
+    },
+    {
+      "path": "bin/features/sh600010/open.5min.bin",
+      "bytes": 839620,
+      "sha256": "619bdfed91663841b22b03935ce2262f526b529972962e3fd4d44015e6041094"
+    },
+    {
+      "path": "bin/features/sh600010/paused_num.5min.bin",
+      "bytes": 839620,
+      "sha256": "edebb2daca3cbfbc913a3f88b0bacdf60b4f89d2d873bf4bb4725adaa39daede"
+    },
+    {
+      "path": "bin/features/sh600010/paused.5min.bin",
+      "bytes": 839620,
+      "sha256": "6b6f54dc5b12c04d8b7179aca1a56cde975c4f5adc1649082a90b26b2b264b0d"
+    },
+    {
+      "path": "bin/features/sh600010/volume.5min.bin",
+      "bytes": 839620,
+      "sha256": "17a2bcd7ba7f39e738d25e210bbd12cb8aecac88fe98ad5f7ff922bcb5cc6d46"
+    },
+    {
+      "path": "bin/features/sh600011/adjustflag.5min.bin",
+      "bytes": 839620,
+      "sha256": "c0fe6728787b5970588fb83e667bca36e89374bebc7f195b07a96ebac9c6e421"
+    },
+    {
+      "path": "bin/features/sh600011/amount.5min.bin",
+      "bytes": 839620,
+      "sha256": "8008cbd3d7f73da0dfcd08ae3d123eb0f9da978d1063c1b76b993f3f07076d1e"
+    },
+    {
+      "path": "bin/features/sh600011/change.5min.bin",
+      "bytes": 839620,
+      "sha256": "054f7532b6e536ce0a16f4d981e6b7a6b41bf28dba126b8309aac828fe15dff2"
+    },
+    {
+      "path": "bin/features/sh600011/close.5min.bin",
+      "bytes": 839620,
+      "sha256": "ace10f34c494cd550ea5f6ea8152e55d8beacfee9ff5eae3addd43b5e54ab19a"
+    },
+    {
+      "path": "bin/features/sh600011/factor.5min.bin",
+      "bytes": 839620,
+      "sha256": "bd43f90628362f4525aa27300ad5c7ee78202ce779127c0afac026b4915c0be8"
+    },
+    {
+      "path": "bin/features/sh600011/high.5min.bin",
+      "bytes": 839620,
+      "sha256": "eb4bae4f281dcfc46e0f8d876aab68b646989ae47f1f4475afa97fc7e885041b"
+    },
+    {
+      "path": "bin/features/sh600011/low.5min.bin",
+      "bytes": 839620,
+      "sha256": "36860f5400014d75e38ec085c4d7770271226158afc0ca6a8894fef975876667"
+    },
+    {
+      "path": "bin/features/sh600011/open.5min.bin",
+      "bytes": 839620,
+      "sha256": "4edbd1e75392bd2a922116097451a104a9939972fdb4bff1073bb445160ed8fa"
+    },
+    {
+      "path": "bin/features/sh600011/paused_num.5min.bin",
+      "bytes": 839620,
+      "sha256": "e129291ed9240d7058bb9dbcc25c9961396edcb9f8ae2af963edc174e3158b1b"
+    },
+    {
+      "path": "bin/features/sh600011/paused.5min.bin",
+      "bytes": 839620,
+      "sha256": "aebe5fbbc8e6629c4bbc4385d85284aefde90b32f5b92f8e2aa63976e7d42474"
+    },
+    {
+      "path": "bin/features/sh600011/volume.5min.bin",
+      "bytes": 839620,
+      "sha256": "1997bdc45d91b89ee01af806b772335e81c182c7d363c9a84de05889a1aae361"
+    },
+    {
+      "path": "bin/features/sh600015/adjustflag.5min.bin",
+      "bytes": 839620,
+      "sha256": "e0d26f050001d37fab11acda29c24664f2b4eef41142c84d7be7cd6b35481afd"
+    },
+    {
+      "path": "bin/features/sh600015/amount.5min.bin",
+      "bytes": 839620,
+      "sha256": "c3a350692904f33041b71887bc9411ee596c120b680cfd7512d3750c59ade3de"
+    },
+    {
+      "path": "bin/features/sh600015/change.5min.bin",
+      "bytes": 839620,
+      "sha256": "e861020143b755a85b4be7048bd97d0c4f65abf220f6a100c503b03c8c0d72be"
+    },
+    {
+      "path": "bin/features/sh600015/close.5min.bin",
+      "bytes": 839620,
+      "sha256": "33bf8e88dd351ce1a3e640157557f646ad499014177ab79a70970ee23f8ce5a7"
+    },
+    {
+      "path": "bin/features/sh600015/factor.5min.bin",
+      "bytes": 839620,
+      "sha256": "fea5cfdb2e1ea16ad33a69e4a776ff285861ab55dc1386a8f2480e905ac110cb"
+    },
+    {
+      "path": "bin/features/sh600015/high.5min.bin",
+      "bytes": 839620,
+      "sha256": "c26629abcba91d046d9c787b3c5f2d4b546098013d5eab2a3fc8ccc20e7d0a65"
+    },
+    {
+      "path": "bin/features/sh600015/low.5min.bin",
+      "bytes": 839620,
+      "sha256": "a47947b59f4f494d5d924e9c54987a26485196717de3613380c97b66907a0701"
+    },
+    {
+      "path": "bin/features/sh600015/open.5min.bin",
+      "bytes": 839620,
+      "sha256": "e51794cd3487ed76d1a461c99a9267d2d979dedb4a26292a2384441e21cb29b4"
+    },
+    {
+      "path": "bin/features/sh600015/paused_num.5min.bin",
+      "bytes": 839620,
+      "sha256": "ce60719fe49cf72dbcc53a37431c4ab2f4ad3ea5c0df46be5c1323e345749792"
+    },
+    {
+      "path": "bin/features/sh600015/paused.5min.bin",
+      "bytes": 839620,
+      "sha256": "762317f5669eadb8de0467d5bbdd7768760aff326b977f475146ca56578d27e2"
+    },
+    {
+      "path": "bin/features/sh600015/volume.5min.bin",
+      "bytes": 839620,
+      "sha256": "6670525ce1030603c891b10b58f88221bfdbe322fe2e88a827b7b2c9310c878e"
+    },
+    {
+      "path": "bin/features/sh600016/adjustflag.5min.bin",
+      "bytes": 839620,
+      "sha256": "7a91ead379057778e9c379511ff8c157a4544d4bbd9feead4a193a75be0db0fc"
+    },
+    {
+      "path": "bin/features/sh600016/amount.5min.bin",
+      "bytes": 839620,
+      "sha256": "d284f9a9d5bd71b340effa73c61edc635b4aa7dab44ab484104a6f9a1ee8af0a"
+    },
+    {
+      "path": "bin/features/sh600016/change.5min.bin",
+      "bytes": 839620,
+      "sha256": "381e8a2683a21cd1b0fdcd0788f7a95fc9635d38963dab884b03c3e785d2de0d"
+    },
+    {
+      "path": "bin/features/sh600016/close.5min.bin",
+      "bytes": 839620,
+      "sha256": "97c8f3a4d3ee667dc3b0aa16fb853289bb4dd91a0069123dda0286d53ffae488"
+    },
+    {
+      "path": "bin/features/sh600016/factor.5min.bin",
+      "bytes": 839620,
+      "sha256": "a931b7779fc0eba4b446f91b8eb0500b1282dffac6cd5954ea19fec449212da1"
+    },
+    {
+      "path": "bin/features/sh600016/high.5min.bin",
+      "bytes": 839620,
+      "sha256": "ea92e329207f615bdc229fcab6baa5fb8779bad9318d9f987c1848d91d414e82"
+    },
+    {
+      "path": "bin/features/sh600016/low.5min.bin",
+      "bytes": 839620,
+      "sha256": "3d3b5bebd52e0f320c2c21b1877477e338a82e8174df70bb90a763ab43cc567c"
+    },
+    {
+      "path": "bin/features/sh600016/open.5min.bin",
+      "bytes": 839620,
+      "sha256": "263516434477a66b3ec732886eaac38f149a602c7f9d30e0011b84ba0f4e5f42"
+    },
+    {
+      "path": "bin/features/sh600016/paused_num.5min.bin",
+      "bytes": 839620,
+      "sha256": "918482d81641853d5496b296f5694da909fcd99184fb6ed88613124fae8a35d9"
+    },
+    {
+      "path": "bin/features/sh600016/paused.5min.bin",
+      "bytes": 839620,
+      "sha256": "412a30354fc9a736031b00171b826ed4357de638716b84912ba507fde0d63ae3"
+    },
+    {
+      "path": "bin/features/sh600016/volume.5min.bin",
+      "bytes": 839620,
+      "sha256": "34f12a288e0d7f7cc86ee02f624963d3ae8d0d6ef1c67975a6155511065634d7"
+    },
+    {
+      "path": "bin/features/sh600018/adjustflag.5min.bin",
+      "bytes": 839620,
+      "sha256": "77b54b4bad9947660420919b07f79636b5b823702f8ee5407468407e13803143"
+    },
+    {
+      "path": "bin/features/sh600018/amount.5min.bin",
+      "bytes": 839620,
+      "sha256": "45c8af76dbe6510ca3474a5d794b5bda9c69114f5109ada057ac81e7ef2b082e"
+    },
+    {
+      "path": "bin/features/sh600018/change.5min.bin",
+      "bytes": 839620,
+      "sha256": "bcef5fcecfb1ac4f378c1fda5f12adcac9741d5a2b970b6aa92abd52c103487a"
+    },
+    {
+      "path": "bin/features/sh600018/close.5min.bin",
+      "bytes": 839620,
+      "sha256": "b206d12cb5ab5cca5e7cb18306f3afe5a6e9b4cead9b1676414c5edd927ee0f1"
+    },
+    {
+      "path": "bin/features/sh600018/factor.5min.bin",
+      "bytes": 839620,
+      "sha256": "6c2ea9e8452dfb312cc679e07ce896a7870bfab152d1a26ae3845848a53c87f9"
+    },
+    {
+      "path": "bin/features/sh600018/high.5min.bin",
+      "bytes": 839620,
+      "sha256": "ed65524063c9126990d9cd589a3a1801cef37ddbba8f8fe37226fc9b6ff6b5da"
+    },
+    {
+      "path": "bin/features/sh600018/low.5min.bin",
+      "bytes": 839620,
+      "sha256": "bcdad4ab6f8ce40b226cbe290190689adc076afd82a4324b4337a4328be9695b"
+    },
+    {
+      "path": "bin/features/sh600018/open.5min.bin",
+      "bytes": 839620,
+      "sha256": "d16025653e9f60a3563bf92256e459e2e64e9aa1d477bdd0dbc8281cd3594602"
+    },
+    {
+      "path": "bin/features/sh600018/paused_num.5min.bin",
+      "bytes": 839620,
+      "sha256": "dfe04d155e3adbed392c7cb870c3608f232378ff35cb6177185c3d1bf644c7be"
+    },
+    {
+      "path": "bin/features/sh600018/paused.5min.bin",
+      "bytes": 839620,
+      "sha256": "848ccefd69729c747af3168db8e722e7b80ae27a43e9328b6ee0332f4bf94e3e"
+    },
+    {
+      "path": "bin/features/sh600018/volume.5min.bin",
+      "bytes": 839620,
+      "sha256": "dbc4a8c7a7f0904d3717ba31e92aed9825f950fb5aa65ea5aa7b5831c6dce0dd"
+    },
+    {
+      "path": "bin/features/sh600019/adjustflag.5min.bin",
+      "bytes": 839620,
+      "sha256": "15153952cfe532bee28db34bace447e70479e90e2d025669f03cdb14a554fd97"
+    },
+    {
+      "path": "bin/features/sh600019/amount.5min.bin",
+      "bytes": 839620,
+      "sha256": "ed99496e24be1d59f717f34733ef5c9d05f5c074c9349ab30c97be0980ec96ef"
+    },
+    {
+      "path": "bin/features/sh600019/change.5min.bin",
+      "bytes": 839620,
+      "sha256": "5ef79669a15d89593d47b039b79fa5b30634b0ad0226306a33ecbbc68f7861e8"
+    },
+    {
+      "path": "bin/features/sh600019/close.5min.bin",
+      "bytes": 839620,
+      "sha256": "78f2f5bc89d36b649a06e717a6e69e9b3f194bb5fc10e315f222218317e0baec"
+    },
+    {
+      "path": "bin/features/sh600019/factor.5min.bin",
+      "bytes": 839620,
+      "sha256": "0c97ce2f5a6c5b79c08fdc63f93ed9597ce59254080532996bdbec9536639af6"
+    },
+    {
+      "path": "bin/features/sh600019/high.5min.bin",
+      "bytes": 839620,
+      "sha256": "5342a107a29fdba94aa4f78ce2d2b5954517dafbb4fad5c402416f8b10ad4683"
+    },
+    {
+      "path": "bin/features/sh600019/low.5min.bin",
+      "bytes": 839620,
+      "sha256": "86534858e68f51bbd37f7aa047a5f3cbc2cba2a9d0edaf66827631710adb3a0e"
+    },
+    {
+      "path": "bin/features/sh600019/open.5min.bin",
+      "bytes": 839620,
+      "sha256": "f7c03935d41fd3f1134f582ce3a7f1b9a70c9b775b0f45c007bee3ca6aef10b4"
+    },
+    {
+      "path": "bin/features/sh600019/paused_num.5min.bin",
+      "bytes": 839620,
+      "sha256": "c01f454c070e5b5b069466d067f0e001992d23a180956bca8f30acdae9578e44"
+    },
+    {
+      "path": "bin/features/sh600019/paused.5min.bin",
+      "bytes": 839620,
+      "sha256": "4812bc1a1907a35e3b35a4653c068cece1d0d39831aa1d97c58219100556552c"
+    },
+    {
+      "path": "bin/features/sh600019/volume.5min.bin",
+      "bytes": 839620,
+      "sha256": "46d6bcb0b45ad628d6306876b8060aa01481a06d76d4ec3ef4e58229faf0a51c"
+    },
+    {
+      "path": "bin/features/sh600023/adjustflag.5min.bin",
+      "bytes": 422404,
+      "sha256": "87576302b225e7a7c192892240e717b0c47c807b4c4c24a73d59fb713ac31b5e"
+    },
+    {
+      "path": "bin/features/sh600023/amount.5min.bin",
+      "bytes": 422404,
+      "sha256": "a37d173c0eb9ed409e93e3142acab60372ad311be54a20c34594035c6bbd8731"
+    },
+    {
+      "path": "bin/features/sh600023/change.5min.bin",
+      "bytes": 422404,
+      "sha256": "b143f81bf7167c288cac654f6287f2fe5e7387d190533be5af0b44d089ac6027"
+    },
+    {
+      "path": "bin/features/sh600023/close.5min.bin",
+      "bytes": 422404,
+      "sha256": "2ed7501c506fdac771d6e907b25dbe1fd840d6619154d4c444aec82445fe3342"
+    },
+    {
+      "path": "bin/features/sh600023/factor.5min.bin",
+      "bytes": 422404,
+      "sha256": "d41f6cfd3809df0255dbc64c26ccbbaa9afe1932f8d60bbd40483d84fb74db4c"
+    },
+    {
+      "path": "bin/features/sh600023/high.5min.bin",
+      "bytes": 422404,
+      "sha256": "45b728a156dc44e85b2fabab065619768da9eac485efae3213f789681804903b"
+    },
+    {
+      "path": "bin/features/sh600023/low.5min.bin",
+      "bytes": 422404,
+      "sha256": "366e27e8fd008da58c61c271afb79dd4eb0734ab929b7fd25ad63c43961c0946"
+    },
+    {
+      "path": "bin/features/sh600023/open.5min.bin",
+      "bytes": 422404,
+      "sha256": "3ac845c1029248fefa2fb46570c40b723b06a2f855bf715ec1aea4b9c1f45f4a"
+    },
+    {
+      "path": "bin/features/sh600023/paused_num.5min.bin",
+      "bytes": 422404,
+      "sha256": "ef288aa49f4faf4c7d0b5b41adf5535a0cf55413a8f58673b96ab38bbfc62820"
+    },
+    {
+      "path": "bin/features/sh600023/paused.5min.bin",
+      "bytes": 422404,
+      "sha256": "618f887919685cc2c8e9f45d69ef7f44e038a1136574ac5bb7a759165ccb6408"
+    },
+    {
+      "path": "bin/features/sh600023/volume.5min.bin",
+      "bytes": 422404,
+      "sha256": "98190de8952fdda2293423c91ee49fffb7956a9dc34eec1bb4d4d8df01c99059"
+    },
+    {
+      "path": "bin/instruments/all.txt",
+      "bytes": 43267,
+      "sha256": "f728d8737a51e30d14cd7c07433034b87f443dfc40af90dcd51862e8cb3e7ec0"
+    },
+    {
+      "path": "bin/instruments/csi300s19_22.txt",
+      "bytes": 20727,
+      "sha256": "e6a47f941df459fe04da3b5ed2756ea9a38a4530bedb3ce40ce09d5091b35067"
+    },
+    {
+      "path": "orders/all/SH600000.pkl.target",
+      "bytes": 14475,
+      "sha256": "743bf887cd92e71481e9e11844c9c71a51d9da6011dbfd3e772de928d12c1a83"
+    },
+    {
+      "path": "orders/all/SH600004.pkl.target",
+      "bytes": 14475,
+      "sha256": "f2843c6b7bbdb5e2d68cac3425e94a84d1d3afbddb203365d129f72653312691"
+    },
+    {
+      "path": "orders/all/SH600010.pkl.target",
+      "bytes": 14475,
+      "sha256": "9d1fe6a7d8134b4c54cf9ab48f0e40acb34788b9f5e8f742500c0d7414c73430"
+    },
+    {
+      "path": "orders/all/SH600011.pkl.target",
+      "bytes": 14475,
+      "sha256": "345be3460b6e38eddde63282f3a890755a3b36db73c3cd4fa05c386b3363de1b"
+    },
+    {
+      "path": "orders/all/SH600015.pkl.target",
+      "bytes": 14475,
+      "sha256": "500c0abadb9e84de3d451614d0a421fac68151764b290834071504a8da6f83d3"
+    },
+    {
+      "path": "orders/all/SH600016.pkl.target",
+      "bytes": 14475,
+      "sha256": "b81210ecf34925419a38f05064461b7d85040e2e2479ae5fd8df6b5423fff438"
+    },
+    {
+      "path": "orders/all/SH600018.pkl.target",
+      "bytes": 14475,
+      "sha256": "f263b672d1a30664ead60b2ece750ac0fad87e64514138a8145337b8db7827d2"
+    },
+    {
+      "path": "orders/all/SH600019.pkl.target",
+      "bytes": 14475,
+      "sha256": "38b5ac75f1bd62b1b4ff91688c85cb0d74cc6fff47b0ffd0f277205daa80f6c1"
+    },
+    {
+      "path": "orders/all/SH600023.pkl.target",
+      "bytes": 14475,
+      "sha256": "dab3e0cb137e378c329e00fa2a24bcb68ee173614b8cdbee2540f1b2a5a0325d"
+    },
+    {
+      "path": "orders/test_orders.pkl",
+      "bytes": 13442,
+      "sha256": "ad17bb31fcc0e0e9aa5bbf9e34827b9e59b2dd42dedb91392865ca80639160a8"
+    },
+    {
+      "path": "orders/test/SH600000.pkl.target",
+      "bytes": 6390,
+      "sha256": "621de7b154efa097300925e0ba94504bdc810c73834db566cc27ff84843cb86d"
+    },
+    {
+      "path": "orders/test/SH600004.pkl.target",
+      "bytes": 6390,
+      "sha256": "7c081fb706b105823a70d34bce94327564e4ddaf6a86e80518112de85b861d2d"
+    },
+    {
+      "path": "orders/test/SH600010.pkl.target",
+      "bytes": 6390,
+      "sha256": "8546bd2517b999df42682dad4e44581f1e896a8240e96541ce14f92c63e938d8"
+    },
+    {
+      "path": "orders/test/SH600011.pkl.target",
+      "bytes": 6390,
+      "sha256": "a7547ee62773c8f34d8975efc874c35f47dd34cc385012428cb5a76ba74b8a36"
+    },
+    {
+      "path": "orders/test/SH600015.pkl.target",
+      "bytes": 6390,
+      "sha256": "3f1f4986b508e70c5a327225e4059f04ed022c2e752a3e4e1634d11e4c50b79f"
+    },
+    {
+      "path": "orders/test/SH600016.pkl.target",
+      "bytes": 6390,
+      "sha256": "af3373eb2719ecb8af962d9e2b0bcff2144cbb96258f0b90dba432a3af41a699"
+    },
+    {
+      "path": "orders/test/SH600018.pkl.target",
+      "bytes": 6390,
+      "sha256": "864fe5c20a6fdb867cd2e4e69a5cce9b298641d09b28b25d3a992824fd1e6dc2"
+    },
+    {
+      "path": "orders/test/SH600019.pkl.target",
+      "bytes": 6390,
+      "sha256": "fdc593129cd5095a4e3496c30ba16aa688649416afd3f37dda05236f8302d192"
+    },
+    {
+      "path": "orders/test/SH600023.pkl.target",
+      "bytes": 6390,
+      "sha256": "6eeda448fb1a0a6e9047adbeff039a6effaf6cfc192bd094fc65b8bdb672e865"
+    },
+    {
+      "path": "orders/train/SH600000.pkl.target",
+      "bytes": 12119,
+      "sha256": "a1c3fd33173303dee6c07e4d2a5e91d2f013e2fc54410163aa4dee744b32a113"
+    },
+    {
+      "path": "orders/train/SH600004.pkl.target",
+      "bytes": 12119,
+      "sha256": "13d478ead0d6e434240500bd7e82e7c32e7c99a438ba0598f9927ab9db4b5f6c"
+    },
+    {
+      "path": "orders/train/SH600010.pkl.target",
+      "bytes": 12119,
+      "sha256": "70a8833b2ba41cc186307d2ab440b00957ef27438ec019185f44df5c57b845aa"
+    },
+    {
+      "path": "orders/train/SH600011.pkl.target",
+      "bytes": 12119,
+      "sha256": "99175917c8bafd39be99d0daef4881ad15a2c06aa315d244d43354e4cd8c7a42"
+    },
+    {
+      "path": "orders/train/SH600015.pkl.target",
+      "bytes": 12119,
+      "sha256": "c899a910351bc3987e61c96236d839f42b196dd738c76c9b46e3fbab6471e52d"
+    },
+    {
+      "path": "orders/train/SH600016.pkl.target",
+      "bytes": 12119,
+      "sha256": "910c4cbdf8e62d532c83aa8604c19103391981efc610168d3d5d88d73348c719"
+    },
+    {
+      "path": "orders/train/SH600018.pkl.target",
+      "bytes": 12119,
+      "sha256": "6cee35e6e9976e6b624b20123ef80c3ebf5606c5ca45e33d3c3f5f7d71303515"
+    },
+    {
+      "path": "orders/train/SH600019.pkl.target",
+      "bytes": 12119,
+      "sha256": "5a2f4a032e1ee1ab9d9f1b47c92c8f1973ec5c23b55883d904575915e20614ea"
+    },
+    {
+      "path": "orders/train/SH600023.pkl.target",
+      "bytes": 12119,
+      "sha256": "34840d6a7ba6f54874554257bac68016426de004246b7d95a464ce35cad3daab"
+    },
+    {
+      "path": "orders/valid_orders.pkl",
+      "bytes": 13982,
+      "sha256": "8641d4eb3a571192012a6c67f410755632bd83a9589f1f8ecc4155678480aee7"
+    },
+    {
+      "path": "orders/valid/SH600000.pkl.target",
+      "bytes": 6466,
+      "sha256": "ec4a609fd6a3aa10a648b1791816a41c3e3ba24979c449bb064981c07d150083"
+    },
+    {
+      "path": "orders/valid/SH600004.pkl.target",
+      "bytes": 6466,
+      "sha256": "275cde442287027fd21bc82ec77eefb63aa5de9d3ec03ec02540c1191b81c47a"
+    },
+    {
+      "path": "orders/valid/SH600010.pkl.target",
+      "bytes": 6466,
+      "sha256": "2c6a2377bea91cd06b332c995596ca97afb10d363bcf62d1e6c5ea498e8f611f"
+    },
+    {
+      "path": "orders/valid/SH600011.pkl.target",
+      "bytes": 6466,
+      "sha256": "b2c17c77e651cd9be4ea0cb2ccf3fe48df31234607071a53cd51355a33e14031"
+    },
+    {
+      "path": "orders/valid/SH600015.pkl.target",
+      "bytes": 6466,
+      "sha256": "6e56a0d3b094c741e012ed345e05f4ac99abec6b7833fd55d644f79577d56ce6"
+    },
+    {
+      "path": "orders/valid/SH600016.pkl.target",
+      "bytes": 6466,
+      "sha256": "0ef3629e78c515214d7b5d118d7c2ee1893d40810fc90673492f5d6f4acf3e7b"
+    },
+    {
+      "path": "orders/valid/SH600018.pkl.target",
+      "bytes": 6466,
+      "sha256": "35368348b6bd6c03194547a4ed10625bd4daa31f5b3eb3fc50b69c5811c268fb"
+    },
+    {
+      "path": "orders/valid/SH600019.pkl.target",
+      "bytes": 6466,
+      "sha256": "d0a6465a4f2b7b11974eb16582cac4380c2287122555349b63ef49524514888e"
+    },
+    {
+      "path": "orders/valid/SH600023.pkl.target",
+      "bytes": 6466,
+      "sha256": "8c96fc79de1214fa44dd1d3a9247e8024475cd20335cd3d608f5b81e9320ad9e"
+    },
+    {
+      "path": "pickle/backtest.pkl",
+      "bytes": 2749027,
+      "sha256": "a393b96074a239ec3a91c666be8d83ac825a71c41345b9bcb0f3358085cc93ef"
+    },
+    {
+      "path": "pickle/backtest/SH600000.pkl",
+      "bytes": 444458,
+      "sha256": "eaf1592d240408e948f1e53e886cd2ca829c4081af63870657ce9033d06c4b25"
+    },
+    {
+      "path": "pickle/backtest/SH600004.pkl",
+      "bytes": 444458,
+      "sha256": "2069064f677e18e5b6cf04c7b6ce723e80de22a80720046c08f65a6c15694f6e"
+    },
+    {
+      "path": "pickle/backtest/SH600009.pkl",
+      "bytes": 444458,
+      "sha256": "e03325cb19cc68564d34fcebbeb12eb03526c3785e475e115e1fd78dd58f1825"
+    },
+    {
+      "path": "pickle/backtest/SH600010.pkl",
+      "bytes": 444458,
+      "sha256": "a69db31116a653abc7ab25d1a67b28fafeca1658ef901cc3adf3f1dc6b4fbd96"
+    },
+    {
+      "path": "pickle/backtest/SH600011.pkl",
+      "bytes": 444458,
+      "sha256": "6a39ad801891fe846494bcb515b4744a12ea67ed4b2d6774dd0a820418c063df"
+    },
+    {
+      "path": "pickle/backtest/SH600015.pkl",
+      "bytes": 444458,
+      "sha256": "fd5d49b32cde07875b8b30e0460e13af7f853d90abaae5a656415c55bc4f27a2"
+    },
+    {
+      "path": "pickle/backtest/SH600016.pkl",
+      "bytes": 444458,
+      "sha256": "bfcdc44cabe5f36c7e2f34fa5809daea01f133e78441026ec14e3ea31a766adf"
+    },
+    {
+      "path": "pickle/backtest/SH600018.pkl",
+      "bytes": 444458,
+      "sha256": "ec8a0a346cc80806bef38147e74e970755dcb4c608c3bf8c28e47dcb0836e8a3"
+    },
+    {
+      "path": "pickle/backtest/SH600019.pkl",
+      "bytes": 444458,
+      "sha256": "2e6b7c336ae416a8551111739c8cd3240bd88d1a8fab4c1e73f6d4ffedb16dce"
+    },
+    {
+      "path": "pickle/backtest/SH600023.pkl",
+      "bytes": 444458,
+      "sha256": "5a1ee54f3e757a40f45b97c563880b25c6f44c0fc683b52196dfbb316b79c8a2"
+    },
+    {
+      "path": "pickle/backtesttest.pkl",
+      "bytes": 504475,
+      "sha256": "5267e3b6b545260674e86732cc64046c1c52af237c005240307951088e1a916b"
+    },
+    {
+      "path": "pickle/backtesttrain.pkl",
+      "bytes": 2093770,
+      "sha256": "b38df1c6f0959e9f02e595e91edb2e66bd3e8c0c79da35f757034642335e37d0"
+    },
+    {
+      "path": "pickle/backtestvalid.pkl",
+      "bytes": 525595,
+      "sha256": "563a170c57fcf5f2dab49683839ed0c7a8bec457a7ad1c13c3903dbaf5530fd7"
+    },
+    {
+      "path": "pickle/feature.pkl",
+      "bytes": 10198700,
+      "sha256": "1bc1b1cf8ee47400224d98d5c58e3289c507f27690cb1226d43ff71ecb9fc228"
+    },
+    {
+      "path": "pickle/feature/SH600000.pkl",
+      "bytes": 1190779,
+      "sha256": "889a846df4b5e05177af89ce7b01a83f4ee5c85e103e4ccb6db680be28747748"
+    },
+    {
+      "path": "pickle/feature/SH600004.pkl",
+      "bytes": 1190779,
+      "sha256": "962eb46a0996afd03c363120a94d1edb54dcdf3e43703ebcde6a2886627095eb"
+    },
+    {
+      "path": "pickle/feature/SH600009.pkl",
+      "bytes": 1190779,
+      "sha256": "66236c71fcdfa5586ce05a79b839e9dd5ff5f04de465c069dbd74dd72a13548c"
+    },
+    {
+      "path": "pickle/feature/SH600010.pkl",
+      "bytes": 1190779,
+      "sha256": "833a5dfd93d3e9b26b385c22e19e585ef4998fe588c2a301ba626f1d8adfb1ab"
+    },
+    {
+      "path": "pickle/feature/SH600011.pkl",
+      "bytes": 1190779,
+      "sha256": "fde6324df837a249b4c5f9f0f921ede353f836f61b1f6f1336aca2312011c8fe"
+    },
+    {
+      "path": "pickle/feature/SH600015.pkl",
+      "bytes": 1190779,
+      "sha256": "c1d2fe2f5f8c67479b5a6423d99e2df01ee0a2bbc4a4c9ac1d1f22de28613f46"
+    },
+    {
+      "path": "pickle/feature/SH600016.pkl",
+      "bytes": 1190779,
+      "sha256": "712efe79776cf09483688c9db602d7b2a4881edf6776555ec08b2c3106cb0ca5"
+    },
+    {
+      "path": "pickle/feature/SH600018.pkl",
+      "bytes": 1190779,
+      "sha256": "bcb71702253fa67a894ed382dca558d4945c35325306f5033e530d72792539a6"
+    },
+    {
+      "path": "pickle/feature/SH600019.pkl",
+      "bytes": 1190779,
+      "sha256": "f43d145d59d88a54e17fdf62925cc7fdc3de61f7043b16e7f2916bb43f0c5d16"
+    },
+    {
+      "path": "pickle/feature/SH600023.pkl",
+      "bytes": 1190779,
+      "sha256": "6200abf6444fc4928e1847c6e0046a7030962eb6dcaf09c68d081899dd446fe6"
+    },
+    {
+      "path": "pickle/featuretest.pkl",
+      "bytes": 1426148,
+      "sha256": "e1c013df87a68177a5278c6ca495995cf622023bd6081622a9c04c55807ebc4d"
+    },
+    {
+      "path": "pickle/featuretrain.pkl",
+      "bytes": 7638803,
+      "sha256": "7c4ec0496460c0174b3551306eba023c51587f77dba8fbcca9929eaa80f2629d"
+    },
+    {
+      "path": "pickle/featurevalid.pkl",
+      "bytes": 1508708,
+      "sha256": "b7f9ceea24254d5493276b9d7b162cb2afef81f2ed842fc40d5387f3fbc972cc"
+    },
+    {
+      "path": "stat/price_mean.npy",
+      "bytes": 132,
+      "sha256": "54c0b2c72eeceadebe8465d00bfbaa087f99e909cc2e29617b9a8fa5db2e6279"
+    },
+    {
+      "path": "stat/price_std.npy",
+      "bytes": 132,
+      "sha256": "1ce712c72d20f87dc7d6db5eae26e81cf736d0707c4c8f3d5d27436a65985805"
+    },
+    {
+      "path": "stat/price_vmax.npy",
+      "bytes": 132,
+      "sha256": "e8e0676a13d88137e0c90a058ba3a6fe8939e3c53e1a6055bac617ede3a63fb3"
+    },
+    {
+      "path": "stat/price_vmin.npy",
+      "bytes": 132,
+      "sha256": "2336a4d3d18d90ce2d2b1a88d1b2fe9fb29b71335f1e1b55a725f74006ff46b4"
+    },
+    {
+      "path": "stat/volume_mean.npy",
+      "bytes": 132,
+      "sha256": "2d555ca62b33dfd5f0ce1a2375633bd22e453a8c1b57701a1c30890b4dbc2625"
+    },
+    {
+      "path": "stat/volume_std.npy",
+      "bytes": 132,
+      "sha256": "f725422ca44c9747caa12224d67177f5c1ca167bc786b0da062ce06edfde938e"
+    },
+    {
+      "path": "stat/volume_vmax.npy",
+      "bytes": 132,
+      "sha256": "22a2d74a8893ee46d700cfb70cf8ea83b41d10d04e875c535ca40d9b0e5da707"
+    },
+    {
+      "path": "stat/volume_vmin.npy",
+      "bytes": 132,
+      "sha256": "ff3e8bb43bbadf9af9aeaf9479cf51feefe5fd60edfacaaf0ceed663403417ab"
+    }
+  ]
+}
