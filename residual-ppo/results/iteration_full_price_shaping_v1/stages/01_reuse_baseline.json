@@ -1,0 +1,9 @@
+{
+  "name": "reuse_baseline",
+  "completed": "2026-11-14T21:43:03.365095",
+  "outputs": {
+    "/root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/baseline/best_validation.pth": "f5b6caf92d782acd780ae8285b5a4880e99f39cdf37a4416e1335d15f58684ce",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/baseline/selection.json": "48b62bc183cd62668e68582c9575a03370b9211a620f1fe2cd4b1ac4946179a1",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/artifacts/regime_full.npz": "8ce080085d7d0512443743249e9e9150552d92fbf68451e580ceee4b774c8ad7"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "summary",
+  "completed": "2026-11-14T22:44:12.994992",
+  "outputs": {
+    "/root/autodl-tmp/qlib-work/results/iteration_full_paired_pa_v2/summary.csv": "cef4b987d75bc6f8e9f12065cb3cd7bd32fb73997047b6b2a31acaf5a2daf548",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_paired_pa_v2/execution_metrics.csv": "cef4b987d75bc6f8e9f12065cb3cd7bd32fb73997047b6b2a31acaf5a2daf548",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_paired_pa_v2/order_execution_metrics.csv": "358d971debee90c2fe03975560c69e651e6e6a3db026dc332bde5626ed4bf3b8"
+  }
+}

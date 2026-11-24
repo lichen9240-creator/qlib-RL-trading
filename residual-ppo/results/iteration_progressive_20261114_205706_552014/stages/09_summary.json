@@ -1,0 +1,9 @@
+{
+  "name": "summary",
+  "completed": "2026-11-14T21:23:34.965571",
+  "outputs": {
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/summary.csv": "907de760e0c26d2668ad83301ae868494d647dc13e830b86dd14bafafcae3a56",
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/execution_metrics.csv": "1a86ee56f10d162e63911886da1dfec0df374408cc5948a0168849ee3c5bcae9",
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/order_execution_metrics.csv": "680777f805b6c0748979f873843ca6b77e6eda0d7b974816f4b7f5d017d4a382"
+  }
+}

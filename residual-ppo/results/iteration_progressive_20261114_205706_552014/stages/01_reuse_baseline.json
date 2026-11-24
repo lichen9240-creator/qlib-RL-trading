@@ -1,0 +1,9 @@
+{
+  "name": "reuse_baseline",
+  "completed": "2026-11-14T20:59:32.293606",
+  "outputs": {
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/baseline/best_validation.pth": "f5b6caf92d782acd780ae8285b5a4880e99f39cdf37a4416e1335d15f58684ce",
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/baseline/selection.json": "48b62bc183cd62668e68582c9575a03370b9211a620f1fe2cd4b1ac4946179a1",
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/baseline_test/result.csv": "e3a1b8f1b861c1f625c59283b8625b72dbf7d7a6e715b9162dec71a28e0e7558"
+  }
+}

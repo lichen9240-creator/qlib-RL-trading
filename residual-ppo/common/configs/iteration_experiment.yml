@@ -1,0 +1,35 @@
+# Same policies, simulator, PPO repeats and metrics as the full suite.
+# The two development evaluation blocks come from the original validation period.
+seed: 42
+device: cuda
+baseline_repo: qlib
+residual_repo: qlib-modules
+data_dir: qlib/examples/rl_order_execution/data
+orders_dir: datasets/iteration20_seed42
+iteration_stocks: 20
+variants: [full]
+
+baseline_iterations: 40
+residual_iterations: 40
+episodes_per_collect: 128
+validate_every: 10
+baseline_concurrency: 16
+residual_concurrency: 16
+baseline_batch_size: 1024
+baseline_repeat: 25
+residual_batch_size: 1024
+residual_repeat: 5
+residual_buffer_size: 262144
+regime_max_sequences: 2048
+regime_max_iter: 20
+
+parallel_mode: subproc
+worker_threads: 1
+worker_timeout: 120
+file_cache_size: 64
+day_cache_size: 1024
+regime_cache_size: 1024
+high_batch_size: 8
+high_batch_wait_ms: 0.5
+gru_sequence: true
+profile_execution: false

@@ -1,0 +1,29 @@
+{
+  "train": {
+    "count": 7220,
+    "stocks": 20,
+    "start": "2020-01-02 00:00:00",
+    "end": "2021-06-30 00:00:00",
+    "files": {
+      "orders.pkl": "129914ade97167b63b332d6372ee600db2ce3c05073859989180767b2ba0d28e"
+    }
+  },
+  "valid": {
+    "count": 640,
+    "stocks": 20,
+    "start": "2021-07-01 00:00:00",
+    "end": "2021-08-13 00:00:00",
+    "files": {
+      "orders.pkl": "f045c145be38651301496a1d4627a39ca4aec32efc2e915c84ed404d7f7c53df"
+    }
+  },
+  "test": {
+    "count": 640,
+    "stocks": 20,
+    "start": "2021-08-16 00:00:00",
+    "end": "2021-09-30 00:00:00",
+    "files": {
+      "orders.pkl": "2ce916b2a3ea83321a27bdad0d5b87ce58021916e2745fc25fdb23feb1166eed"
+    }
+  }
+}

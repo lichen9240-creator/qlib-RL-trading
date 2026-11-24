@@ -1,0 +1,9 @@
+{
+  "name": "baseline_train",
+  "completed": "2026-11-14T19:33:36.603539",
+  "outputs": {
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_192841_287401/baseline/train_result.csv": "e6a376297f1c8caa50597702ed891b3f4f7074ac8ac8b90833bcbe36496bf2a6",
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_192841_287401/baseline/validation_result.csv": "8f30de24878b807436317cac519d420e48c5aab7e8cefabbb55724c725c9d25c",
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_192841_287401/baseline/checkpoints/latest.pth": "17ab057ac7afc4e36d59d8144027ef557dac0200acaa293b97a712fc6e1e6ae3"
+  }
+}

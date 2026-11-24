@@ -1,0 +1,37 @@
+# Original Qlib PPO is trained first. All residual variants freeze its best
+# validation checkpoint. Test data are used only after all training is complete.
+seed: 42
+device: cuda
+baseline_iterations: 400
+residual_iterations: 400
+episodes_per_collect: 512
+validate_every: 10
+baseline_concurrency: 16
+residual_concurrency: 16
+# Execution-only options; policy, reward, optimizer and metric definitions stay fixed.
+parallel_mode: subproc
+worker_threads: 1
+worker_timeout: 120
+# Cache entries per process. Zero disables the corresponding cache.
+file_cache_size: 256
+day_cache_size: 4096
+regime_cache_size: 4096
+# Residual execution only: frozen-high batching and equivalent low-GRU sequence call.
+high_batch_size: 8
+high_batch_wait_ms: 0.5
+gru_sequence: true
+profile_execution: false
+baseline_batch_size: 1024
+baseline_repeat: 25
+# Capacity in transitions across all 16 worker partitions.
+baseline_buffer_size: 67584
+residual_batch_size: 1024
+residual_repeat: 5
+residual_buffer_size: 405504
+regime_max_sequences: null
+regime_max_iter: 40
+# Add low-level execution, then market-state inputs, then reward shaping.
+variants: [residual_only, residual_regime, full]
+baseline_repo: qlib
+residual_repo: qlib-modules
+data_dir: qlib/examples/rl_order_execution/data

@@ -1,0 +1,10 @@
+{
+  "name": "train_full",
+  "completed": "2026-11-14T22:42:41.674807",
+  "outputs": {
+    "/root/autodl-tmp/qlib-work/results/iteration_full_paired_pa_v2/full/best_validation.pth": "d5351bf1dd98daf2945a7e5bc0703136ed3af859fa5e6dd25bdef8d6acb1521d",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_paired_pa_v2/full/train_result.csv": "3b35eda7fbe25c00fe18d4f78863ec3247d0d4677dbb44d7ee96a62260eeac1b",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_paired_pa_v2/full/validation_result.csv": "0a38a9a92c3fed5b1d8301770445377b14cdb6cd5eda4cf0a315c7a7c4b20bb4",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_paired_pa_v2/full/resolved_config.yml": "d0306bb62859ff264e46a68f2bb2d5705b3f1731c1b29af71153129965a30ff2"
+  }
+}

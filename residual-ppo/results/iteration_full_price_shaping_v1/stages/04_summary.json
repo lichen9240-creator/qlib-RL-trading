@@ -1,0 +1,9 @@
+{
+  "name": "summary",
+  "completed": "2026-11-14T21:51:04.947586",
+  "outputs": {
+    "/root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/summary.csv": "bf358448a6dbe421eff68600c199e7df16ef7790bd2cdfe5432da4fcbe210694",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/execution_metrics.csv": "bf358448a6dbe421eff68600c199e7df16ef7790bd2cdfe5432da4fcbe210694",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/order_execution_metrics.csv": "189ec09d28274e184db9aff2d9d4126ae1b15690028ff0dad7e5c041bfaf15ca"
+  }
+}

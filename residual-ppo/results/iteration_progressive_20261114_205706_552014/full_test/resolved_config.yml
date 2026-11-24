@@ -1,0 +1,32 @@
+base_reward: arrival_bps
+data: {end_index: 47, orders: 
+    /root/autodl-tmp/qlib-work/datasets/iteration20_seed42, parquet_root: 
+    /root/autodl-tmp/qlib-work/datasets/market_data/parquet, start_index: 0, 
+    train_end: '2021-06-30'}
+high_level: {checkpoint: 
+    /root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/baseline/best_validation.pth,
+  config: 
+    /root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/configs/baseline_train.yml}
+output: 
+  /root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/full_test
+ppo: {discount_factor: 1.0, ent_coef: 0.01, eps_clip: 0.2, gae_lambda: 0.95, 
+    initial_zero_bias: 0.01, lr: 0.0001, max_grad_norm: 0.5, vf_coef: 0.5}
+regime: {enabled: true, max_iter: 20, max_sequences: 2048, model_path: 
+    /root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/artifacts/regime_full.npz,
+  n_states: 3, sticky_prior: 2.0, tol: 1e-05, transition_prior: 1.0, 
+    variance_floor: 0.001}
+residual:
+  enabled: true
+  hidden_dim: 64
+  private_dim: 32
+  scale: 1.0
+  values: [-1.0, -0.5, 0.0, 0.5, 1.0]
+  window: 12
+runtime: {concurrency: 16, day_cache_size: 1024, device: cuda, file_cache_size: 
+    64, gru_sequence: true, high_batch_size: 8, high_batch_wait_ms: 0.5, 
+    parallel_mode: subproc, profile_execution: false, regime_cache_size: 1024, 
+    seed: 42, torch_threads: 2, worker_threads: 1, worker_timeout: 120}
+shaping: {coefficient: 0.1, enabled: true}
+training: {batch_size: 1024, buffer_size: 262144, episodes_per_collect: 128, 
+    iterations: 40, repeat: 5, test_limit: null, train_limit: null, valid_limit: 
+    null, validate_every: 10}

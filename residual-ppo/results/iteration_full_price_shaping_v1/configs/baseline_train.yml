@@ -1,0 +1,49 @@
+action_interpreter:
+  class: CategoricalActionInterpreter
+  kwargs: {max_step: 8, values: 4}
+  module_path: qlib.rl.order_execution.interpreter
+data:
+  num_workers: 0
+  queue_size: 20
+  source:
+    default_end_time_index: 235
+    default_start_time_index: 0
+    feature_columns_today: [$close0, $volume0]
+    feature_columns_yesterday: []
+    feature_root_dir: /root/autodl-tmp/qlib-work/datasets/market_data/pickle
+    order_dir: /root/autodl-tmp/qlib-work/datasets/iteration20_seed42
+    proc_data_dim: 5
+    total_time: 240
+env: {concurrency: 16, day_cache_size: 1024, file_cache_size: 64, parallel_mode: 
+    subproc, worker_threads: 1, worker_timeout: 120}
+network: {class: Recurrent, module_path: qlib.rl.order_execution.network}
+policy:
+  class: PPO
+  kwargs: {lr: 0.0001}
+  module_path: qlib.rl.order_execution.policy
+reward:
+  class: PPOReward
+  kwargs: {end_time_index: 46, max_step: 8, start_time_index: 0}
+  module_path: qlib.rl.order_execution.reward
+runtime: {seed: 42, use_cuda: true}
+simulator: {data_granularity: 5, time_per_step: 30, vol_limit: null}
+state_interpreter:
+  class: FullHistoryStateInterpreter
+  kwargs:
+    data_dim: 5
+    data_ticks: 48
+    max_step: 8
+    processed_data_provider:
+      class: HandlerProcessedDataProvider
+      kwargs:
+        backtest: false
+        data_dir: /root/autodl-tmp/qlib-work/datasets/market_data/pickle
+        feature_columns_today: [$high, $low, $open, $close, $volume]
+        feature_columns_yesterday: [$high_1, $low_1, $open_1, $close_1, 
+            $volume_1]
+      module_path: qlib.rl.data.native
+  module_path: qlib.rl.order_execution.interpreter
+trainer: {batch_size: 1024, checkpoint_every_n_iters: 1, checkpoint_path: 
+    /root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/baseline, 
+    episode_per_collect: 128, max_epoch: 40, repeat_per_collect: 25, 
+    val_every_n_epoch: 10}

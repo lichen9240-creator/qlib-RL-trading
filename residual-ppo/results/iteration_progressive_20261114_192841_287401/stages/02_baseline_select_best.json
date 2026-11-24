@@ -1,0 +1,8 @@
+{
+  "name": "baseline_select_best",
+  "completed": "2026-11-14T19:33:38.355370",
+  "outputs": {
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_192841_287401/baseline/best_validation.pth": "f5b6caf92d782acd780ae8285b5a4880e99f39cdf37a4416e1335d15f58684ce",
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_192841_287401/baseline/selection.json": "48b62bc183cd62668e68582c9575a03370b9211a620f1fe2cd4b1ac4946179a1"
+  }
+}

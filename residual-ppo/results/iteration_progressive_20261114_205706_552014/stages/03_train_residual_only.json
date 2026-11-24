@@ -1,0 +1,10 @@
+{
+  "name": "train_residual_only",
+  "completed": "2026-11-14T21:06:06.900237",
+  "outputs": {
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/residual_only/best_validation.pth": "0b79bbcf9e4047e4a985931ab0f198d82a572ff0936a994de32995b883d576f9",
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/residual_only/train_result.csv": "52958c6391509413bef638f884d9baf4d35927bc53e353904d40115f3d75629e",
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/residual_only/validation_result.csv": "b47ec1c81e03fe7ead500a69dfa3bb04ef7d3f7559d765609edb574ec9a2e944",
+    "/root/autodl-tmp/qlib-work/results/iteration_progressive_20261114_205706_552014/residual_only/resolved_config.yml": "e6499b30eadc11eac0c9e452ebb56c3f1da44a63e574446d8e667f58a3c4fea4"
+  }
+}

@@ -1,0 +1,4 @@
+# The server manifests hash these files byte for byte, including line endings.
+common/** -text
+versions/** -text
+results/** -text

@@ -1,0 +1,10 @@
+{
+  "name": "train_full",
+  "completed": "2026-11-14T21:49:25.194029",
+  "outputs": {
+    "/root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/full/best_validation.pth": "a362300097eff8baaf95fe137b7abcf434f7dca91df5f4465f69f29864b33301",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/full/train_result.csv": "6e1cfd634680663a086a5ae996123b1186571a1acad386924c876134b58f6041",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/full/validation_result.csv": "4147bfb232df5b1885b0e8b1b407ff2c64d8fd8a26301f1476831b36e49c3cf7",
+    "/root/autodl-tmp/qlib-work/results/iteration_full_price_shaping_v1/full/resolved_config.yml": "e0cda07876371e3c391a91deaaaa17be90e0c48507c0221617cd7c2288f480de"
+  }
+}
