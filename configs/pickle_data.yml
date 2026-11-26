@@ -1,0 +1,104 @@
+backtest_conf:
+  class: DatasetH
+  kwargs:
+    handler:
+      class: HighFreqGeneralBacktestHandler
+      kwargs:
+        columns:
+        - $close
+        - $volume
+        day_length: 240
+        end_time: '2021-12-31'
+        freq: 5min
+        inst_processors:
+        - class: TimeRangeFlt
+          kwargs:
+            end_time: '2021-12-31'
+            freq: 5min
+            start_time: '2020-01-01'
+          module_path: qlib.data.dataset.processor
+        instruments: &id001
+        - SH600000
+        - SH600004
+        - SH600009
+        - SH600010
+        - SH600011
+        - SH600015
+        - SH600016
+        - SH600018
+        - SH600019
+        - SH600023
+        start_time: '2020-01-01'
+      module_path: qlib.contrib.data.highfreq_handler
+    segments:
+      test: !!python/tuple
+      - '2021-10-01'
+      - '2021-12-31'
+      train: !!python/tuple
+      - '2020-01-01'
+      - '2021-06-30'
+      valid: !!python/tuple
+      - '2021-07-01'
+      - '2021-09-30'
+  module_path: qlib.data.dataset
+  path: ./data/pickle/backtest.pkl
+end_time: '2021-12-31'
+feature_conf:
+  class: DatasetH
+  kwargs:
+    handler:
+      class: HighFreqGeneralHandler
+      kwargs:
+        columns:
+        - $open
+        - $high
+        - $low
+        - $close
+        day_length: 240
+        end_time: '2021-12-31'
+        fit_end_time: '2021-06-30'
+        fit_start_time: '2020-01-01'
+        freq: 5min
+        infer_processors:
+        - class: HighFreqNorm
+          kwargs:
+            feature_save_dir: ./stat/
+            norm_groups:
+              price: 8
+              volume: 2
+          module_path: qlib.contrib.data.highfreq_processor
+        inst_processors:
+        - class: TimeRangeFlt
+          kwargs:
+            end_time: '2021-12-31'
+            freq: 5min
+            start_time: '2020-01-01'
+          module_path: qlib.data.dataset.processor
+        instruments: *id001
+        start_time: '2020-01-01'
+      module_path: qlib.contrib.data.highfreq_handler
+    segments:
+      test: !!python/tuple
+      - '2021-10-01'
+      - '2021-12-31'
+      train: !!python/tuple
+      - '2020-01-01'
+      - '2021-06-30'
+      valid: !!python/tuple
+      - '2021-07-01'
+      - '2021-09-30'
+  module_path: qlib.data.dataset
+  path: ./data/pickle/feature.pkl
+freq: 5min
+instruments: *id001
+qlib_conf:
+  joblib_backend: threading
+  kernels: 2
+  provider_uri:
+    5min: ./data/bin
+  redis_port: 233
+start_time: '2020-01-01'
+test_start_time: '2021-10-01'
+train_end_time: '2021-06-30'
+valid_end_time: '2021-09-30'
+valid_start_time: '2021-07-01'

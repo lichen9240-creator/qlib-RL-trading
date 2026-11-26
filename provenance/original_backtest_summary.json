@@ -1,0 +1,108 @@
+{
+  "status": {
+    "pid": 46908,
+    "completed_iterations": 212,
+    "phase": "complete",
+    "max_iterations": 500,
+    "updated_at": "2026-11-18T09:00:05.046105+08:00",
+    "elapsed_seconds": 143521.56,
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "current_iteration": 212,
+    "training_episodes": 2150528,
+    "last_iteration_seconds": 335.77,
+    "peak_tensor_mib": 811.6,
+    "training_seconds": 143487.22
+  },
+  "stop_reason": "Official early stopping after 50 validation checks without improvement",
+  "training_episodes": 2120000,
+  "validation_orders_per_check": 576,
+  "validation_checks": 53,
+  "best_validation_iteration": 12,
+  "best_validation_pa_bps": 6.188744956970755,
+  "final_validation_pa_bps": 0.7153635795570491,
+  "final_checkpoint_sha256": "298563126c4c8f819ad24e6fbbfa4f9fb7d1311baf78829a8c3abcf0da850e88",
+  "test_orders_sha256": "ad17bb31fcc0e0e9aa5bbf9e34827b9e59b2dd42dedb91392865ca80639160a8",
+  "simple_test_final": {
+    "orders": 540,
+    "mean_pa_bps": -0.97298861566714,
+    "median_pa_bps": -0.7708847531140428,
+    "mean_fulfillment_ratio": 1.0,
+    "minimum_fulfillment_ratio": 0.9999999999999996,
+    "zero_fill_orders": 0
+  },
+  "data_scope": "9 stocks, 5-minute bars, 2021-10-08 through 2021-12-30 test orders",
+  "nested_exchange": {
+    "open_cost": 0.0005,
+    "close_cost": 0.0015,
+    "min_cost": 5.0,
+    "trade_unit": 100.0
+  },
+  "shutdown_warning": "DataQueue destructor raised handle is closed after all results were saved",
+  "twap": {
+    "orders": 540,
+    "mean_pa_bps": 0.062304717065771634,
+    "median_pa_bps": -0.02089439009755885,
+    "mean_fulfillment_ratio": 0.9971448277994,
+    "minimum_fulfillment_ratio": 0.9787484252935024,
+    "zero_fill_orders": 0,
+    "mean_fee_bps": 25.67733820690295,
+    "mean_fee_adjusted_pa_bps": -25.615033489837174,
+    "notional_weighted_pa_bps": -0.15315076849950532,
+    "seconds": 49.891
+  },
+  "opds_final": {
+    "orders": 540,
+    "mean_pa_bps": -0.9776060085595879,
+    "median_pa_bps": -0.8106862761431133,
+    "mean_fulfillment_ratio": 0.9971448277994,
+    "minimum_fulfillment_ratio": 0.9787484252935024,
+    "zero_fill_orders": 0,
+    "mean_fee_bps": 15.102691503198814,
+    "mean_fee_adjusted_pa_bps": -16.080297511758403,
+    "notional_weighted_pa_bps": -0.7341709773084446,
+    "seconds": 70.89,
+    "iteration": 212,
+    "gross_pa_improvement_over_twap_bps": -1.0399107256253595
+  },
+  "opds_validation_selected": {
+    "orders": 540,
+    "mean_pa_bps": 0.7751896767194475,
+    "median_pa_bps": -0.38495241841907113,
+    "mean_fulfillment_ratio": 0.9971448277994,
+    "minimum_fulfillment_ratio": 0.9787484252935024,
+    "zero_fill_orders": 0,
+    "mean_fee_bps": 15.296755713118971,
+    "mean_fee_adjusted_pa_bps": -14.521566036399525,
+    "notional_weighted_pa_bps": -1.880780771578342,
+    "seconds": 70.369,
+    "iteration": 12,
+    "gross_pa_improvement_over_twap_bps": 0.7128849596536753
+  },
+  "evaluation_completed_at": "2026-11-18T09:08:29.975469+08:00",
+  "time_accounting": {
+    "Source": "Run perf_counter and Windows Power-Troubleshooter events",
+    "TrainingAndValidationWallSeconds": 143487.22,
+    "TotalWallSeconds": 143521.56,
+    "RecordedSleepSeconds": 45427.73125809999,
+    "TrainingAndValidationExcludingSleepSeconds": 98059.48874190002,
+    "SimpleTestSeconds": 34.33999999999651,
+    "SleepIntervals": [
+      {
+        "SleepTime": "2026-11-17T18:12:36.7728006+08:00",
+        "WakeTime": "2026-11-17T18:13:13.6165055+08:00",
+        "Seconds": 36.8437049
+      },
+      {
+        "SleepTime": "2026-11-17T04:41:46.2341399+08:00",
+        "WakeTime": "2026-11-17T17:17:53.5675677+08:00",
+        "Seconds": 45367.3334278
+      },
+      {
+        "SleepTime": "2026-11-17T04:41:19.1120991+08:00",
+        "WakeTime": "2026-11-17T04:41:42.6662245+08:00",
+        "Seconds": 23.5541254
+      }
+    ]
+  }
+}
